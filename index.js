@@ -83,8 +83,8 @@ app.post('/create-checkout-session', async (req, res) => {
         },
         quantity: 1,
       }],
-      success_url: 'https://gemuplay.io/success',
-      cancel_url: 'https://gemuplay.io/cancel',
+      success_url: 'https://gemuplay.io',
+      cancel_url: 'https://gemuplay.io',
       metadata: {
         email: req.body.email,
       },
