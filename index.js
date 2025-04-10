@@ -32,6 +32,7 @@ app.post('/webhook', bodyParser.raw({ type: 'application/json' }), async (req, r
 
     Parse.initialize("tZ6IL6qBYk79B7xQpiwvOVFm1DQLoeNtrN82XrTP", "UP63xGM8dWYhQg02LcPfXSw8ATHgSIaaXkHiwFXW");
     Parse.serverURL = "https://parseapi.back4app.com/";
+    Parse.masterKey = "uZcrpKjMy3SCz2zZZxmcAMUqnrJM4QXrLlTOmbKu";
 
     const query = new Parse.Query(Parse.User);
     query.equalTo("email", email);
