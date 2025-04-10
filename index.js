@@ -72,10 +72,10 @@ app.post('/create-checkout-session', async (req, res) => {
     }],
     success_url: 'https://gemuplay.io',
     cancel_url: 'https://gemuplay.io',
-    metadata: {
-      email: req.body.email, // usado se quiser também passar por metadata
-    },
-    customer_email: req.body.email, // usado para mostrar no checkout e salvar
+//    metadata: {
+//      email: req.body.email, // usado se quiser também passar por metadata
+//    },
+//    customer_email: req.body.email, // usado para mostrar no checkout e salvar
   });
 
   res.json({ url: session.url });
